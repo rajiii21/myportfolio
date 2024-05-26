@@ -19,7 +19,7 @@
 	<!-- start of header section -->
 	<header class="header">
 		<div class="img">
-			<img src="img/profile.jpg" alt="no picture" class="imgg"></img>
+			<img src="img/raj.jpeg" alt="no picture" class="imgg"></img>
 			<h2>Rajeshwari</h2>
 		</div>
 		<div class="icons">
@@ -32,23 +32,23 @@
 		</div>
 		<nav class="nav">
 			<ul>
-				<li><a href="#home" onclick="setActive(this)" class="nav-a">
+				<li><a href="#home" onclick="setActive(this)">
 						<i class="bi bi-house-door-fill"></i><span>Home</span>
 					</a></li>
-				<li><a href="#about" onclick="setActive(this)" class="nav-a">
-						<i class="bi bi-file-earmark-person"></i>About
+				<li><a href="#about" onclick="setActive(this)">
+						<i class="bi bi-file-earmark-person"></i><span>About</span>
 					</a></li>
-				<li><a href="#skill" onclick="setActive(this)" class="nav-a">
-						<i class="bi bi-person-rolodex"></i>Skill
+				<li><a href="#skill" onclick="setActive(this)">
+						<i class="bi bi-person-rolodex"></i><span>Skill</span>
 					</a></li>
-				<li><a href="#education" onclick="setActive(this)" class="nav-a">
-						<i class="bi bi-mortarboard-fill"></i>Education
+				<li><a href="#education" onclick="setActive(this)">
+						<i class="bi bi-mortarboard-fill"></i><span>Education</span>
 					</a></li>
-				<li><a href="#works" onclick="setActive(this)" class="nav-a">
-						<i class="bi bi-cast"></i>Works
+				<li><a href="#works" onclick="setActive(this)">
+						<i class="bi bi-cast"></i><span>Works</span>
 					</a></li>
-				<li><a href="#contact" onclick="setActive(this)" class="nav-a">
-						<i class="bi bi-person-rolodex"></i>Contact
+				<li><a href="#contact" onclick="setActive(this)">
+						<i class="bi bi-person-rolodex"></i><span>Contact</span>
 					</a></li>
 			</ul>
 
@@ -66,16 +66,23 @@
 	<!-- start of homw section -->
 
 	<section class='home-sec' id="home">
+		<div class="dark-light">
+			<i class="bi bi-moon-fill moon change-mood" id="dark"></i>
+			<i class="bi bi-brightness-high-fill sun change-mood" id="light"></i>
+		</div>
 		<div class='homecontainer'>
 			<div class='home-row'>
 				<div class="openicon">
 					<i class="bi bi-list menu-icon " id="openmenu"></i>
 					<i class="bi bi-x" id="closemenu"></i>
 				</div>
+				<div class="homehead">
 				<div class='home-col'>
-					<h1>I<span style="color: #149ddd;">'</span>m Rajeshwari</h1>
-					<p>I'm Frond end Developer</p>
+					<h1>I<span style="color: #149ddd">'</span>m Rajeshwari</h1>
+					<h2>I'm <span class="auto-type"></span></h2>
+					<button class="cv-btn"><a href="" download="">Download CV</a></button>
 				</div>
+			</div>
 			</div>
 		</div>
 	</section>
@@ -92,7 +99,7 @@
 			</div>
 			<div class='about-row'>
 				<div class='about-col-1' data-aos="flip-down">
-					<img src="img/profile2.jpeg" alt="no picture"></img>
+					<img src="img/raj.jpeg" alt="no picture"></img>
 				</div>
 				<div class='about-col-2' data-aos="flip-down">
 					<div class='para1'>
@@ -254,7 +261,7 @@
 					<div class='education'>
 						<div class='education-1'>
 							<h4 class="head">FABEVY TRAINEE</h4>
-							<span class='year'>Jul3-24Nov</span>
+							<span class='year'>Sep 2023-Feb 2024</span>
 							<p>Fabevy Technology, Pavoorchathiram,Tenkasi.</p>
 							<p class="placedetail">Completed an intensive program focusing on modern front-end
 								development technologies such as HTML5, CSS3, JavaScript, React.js, and responsive web
@@ -314,13 +321,44 @@
 							</div>
 						</div>
 					</div>
-
-
-
 				</div>
 
+				<div class="gal-colum" data-aos="flip-left">
+					<div class="gal-card">
+						<div class="gal-item">
+							<img
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVVetY0G8Hki-JFdTY-k02U2z64BDOKdwdjTg-c9PaSUPRmq1O_5z1SL5md0VpWA4IoA&usqp=CAU"></img>
 
+							<div class="portfolio-info">
+								<div class="portfolio-icon">
+									<a href="https://rajiii21.github.io/businesswebsite/" target="_blank">
+										<i class="bi bi-link-45deg"></i>
+									</a>
+									<p>Business Website</p>
+									<h4>Using HTML and CSS</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gal-colum" data-aos="flip-left">
+					<div class="gal-card">
+						<div class="gal-item">
+							<img
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVVetY0G8Hki-JFdTY-k02U2z64BDOKdwdjTg-c9PaSUPRmq1O_5z1SL5md0VpWA4IoA&usqp=CAU"></img>
 
+							<div class="portfolio-info">
+								<div class="portfolio-icon">
+									<a href="https://rajiii21.github.io/businesswebsite/" target="_blank">
+										<i class="bi bi-link-45deg"></i>
+									</a>
+									<p>Business Website</p>
+									<h4>Using HTML and CSS</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="gal-colum" data-aos="flip-left">
 					<div class="gal-card">
 						<div class="gal-item">
@@ -339,7 +377,42 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="gal-colum" data-aos="flip-left">
+					<div class="gal-card">
+						<div class="gal-item">
+							<img
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVVetY0G8Hki-JFdTY-k02U2z64BDOKdwdjTg-c9PaSUPRmq1O_5z1SL5md0VpWA4IoA&usqp=CAU"></img>
 
+							<div class="portfolio-info">
+								<div class="portfolio-icon">
+									<a href="https://rajiii21.github.io/businesswebsite/" target="_blank">
+										<i class="bi bi-link-45deg"></i>
+									</a>
+									<p>Business Website</p>
+									<h4>Using HTML and CSS</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gal-colum" data-aos="flip-left">
+					<div class="gal-card">
+						<div class="gal-item">
+							<img
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVVetY0G8Hki-JFdTY-k02U2z64BDOKdwdjTg-c9PaSUPRmq1O_5z1SL5md0VpWA4IoA&usqp=CAU"></img>
+
+							<div class="portfolio-info">
+								<div class="portfolio-icon">
+									<a href="https://rajiii21.github.io/businesswebsite/" target="_blank">
+										<i class="bi bi-link-45deg"></i>
+									</a>
+									<p>Business Website</p>
+									<h4>Using HTML and CSS</h4>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -349,44 +422,77 @@
 
 
 
-	<!-- star of contact ssection -->
+	<!-- start of contact section -->
 
+	
 	<section class="con-sec" id="contact">
-		<div class="container">
-			<div class="con-title" data-aos="zoom-in-down">
+		<div class="cont-container">
+			<div class="con-title">
 				<h1>CONTACTS</h1>
 			</div>
-			<div class="con-row">
-				<div class="con-col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-					<i class="bi bi-geo-alt"></i>
-					<h3>Location:</h3>
-					<p>9/308 Poobalasamuthiram street,
-						Kurumbalaperi, Tenkasi - 627851. Tamil Nadu </p>
+			<div class="cont-row">
+				<div class="cont-col1">
+					<div class="cont-content2">
+						<h3>Contact Me</h3>
+
+						<div class="cont-icons">
+							<div class="conticons">
+								<i class="bi bi-geo-alt"></i>
+							</div>
+							<p><b>Location:</b>9/308 Poobalasamuthiram street,
+								Kurumbalaperi, Tenkasi - 627851. Tamil Nadu 
+							</p>
+							<p></p>
+						</div>
+						<div class="cont-icons">
+							<div class="conticons">
+								<i class="bi bi-telephone"></i>
+							</div>
+							<p><b>Phone:</b><a href= 'tel:+919360770327' class="change-mood">+91 9360770327</a>
+							</p>
+						</div>
+						<div class="cont-icons">
+							<div class="conticons">
+							<i class="bi bi-envelope"></i>
+							</div>
+							<p><b>Mail:</b><a href="mailto:prajeshwari313@gmail.com" class="change-mood">prajeshwari313@gmail.com</a>
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="con-col" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-					style="padding: 40px 0">
-					<i class="bi bi-envelope"></i>
-					<h3>Email:</h3>
-					<a href="mailto:prajeshwari2163@gmail.com">
-						<p>prajeshwari2163@gmail.com</p>
-					</a>
+				<div class="cont-col2">
+					<div class="cont-content">
+					<h2>Send you a message</h2>
+					<form  action="https://formspree.io/f/xayrzplv"
+					method="POST">
+						<input type="text" placeholder="Name" name="name" class="inputName" required>
+						<br>
+						<input type="email" placeholder="Email" name="Email" required>
+						<br>
+						<input type="text" placeholder="Subject" name="Subject" required><br>
+						<textarea placeholder="Message" name="Messagae" required></textarea>
+
+						<button type="submit" class="submit-btn">Submit</button>
+					</form>
+					</div>
 				</div>
-				<div class="con-col" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-					style="padding: 40px 0">
-					<i class="bi bi-telephone"></i>
-					<h3>call:</h3>
-					<a href="tel:9360770327">
-						<p>9360770327</p>
-					</a>
-				</div>
-				<!-- <span class="con-col">
-						<i class="bi bi-twitter"></i>
-						<i class="bi bi-linkedin"></i>
-					</span> -->
 			</div>
+
+		</div>
+	</section>   
+
+	<!-- end of contact section -->
+
+	<section class="copyright-sec">
+		<div>
+			<p>&copy; Copyright All Rights Reserved</p>
+			<p>Designed by <span>Rajeshwari</span></p>
 		</div>
 	</section>
 
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script>
 
 		const open = document.getElementById("openmenu");
@@ -404,18 +510,51 @@
 
 		AOS.init();
 
+		const darkmood = document.getElementById("dark");
+		const lightmood = document.getElementById("light");
+
+		darkmood.addEventListener("click", function (e) {
+			e.preventDefault()
+			document.querySelector("body").classList.toggle("darktheme")
+			if(document.querySelector("body").classList.contains){
+				document.querySelector("body").classList.add("bi-light")
+
+			}
+			else{
+				document.querySelector("body").classList.add("bi-light")
+
+			}
+			console.log("dark");
+		})
+
+		// lightmood.addEventListener("click", function (e) {
+		// 	e.preventDefault()
+		// 	document.querySelector("body").classList.remove("darklight")
+		// 	document.querySelector("body").classList.add("light")
+
+		// 	console.log("light");
+		// })
+
 
 		function setActive(activelink) {
-			let actives = document.querySelectorAll("header nav ul li .nav-a");
+			let actives = document.querySelectorAll("header nav ul li a");
 			console.log(actives);
 
 			actives.forEach((e) => {
 				e.classList.remove("active")
 			})
-
 			activelink.classList.add("active")
-
 		}
+
+
+		var typed = new Typed('.auto-type', {
+			strings: ['Frontend Developer'],
+			typeSpeed: 175,
+			backSpeed: 150,
+			loop: true
+		})
+
+
 	</script>
 
 </body>
